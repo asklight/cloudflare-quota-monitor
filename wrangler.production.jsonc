@@ -1,0 +1,11 @@
+{
+  "name":"usage-guard-collector",
+  "main":"web/worker.js",
+  "compatibility_date":"2026-09-01",
+  "workers_dev":true,
+  "routes":[{"pattern":"usage.asklight.us.ci","custom_domain":true}],
+  "assets":{"directory":"web/public","binding":"ASSETS","run_worker_first":true},
+  "triggers":{"crons":["0 * * * *"]},
+  "observability":{"enabled":true},
+  "d1_databases":[{"binding":"USAGE","database_name":"usage-guard","database_id":"06040fae-5b1e-4631-be43-cf1b255ccb61"}]
+}

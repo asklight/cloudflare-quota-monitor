@@ -1,0 +1,1 @@
+Asklight deployment: This fork preserves source and deployment changes. Upstream synchronization and automatic production deployment are not configured. Secrets are managed outside GitHub.
